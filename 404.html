@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimpleSite — Легкий сайт</title>
+  <meta name="description" content="Мінімалістичний, адаптивний шаблон сайту зі стилями в окремому файлі." />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-bar">
+    <a class="logo" href="#home">SimpleSite</a>
+    <div class="nav-links">
+      <a href="#about">Про сайт</a>
+      <a href="#features">Можливості</a>
+      <a href="#contact">Контакти</a>
+    </div>
+  </div>
+</nav>
+
+
+<header id="home" class="hero">
+  <div class="container">
+    <h1>Простий та гарний сайт</h1>
+    <p>Мінімалістичний дизайн, адаптивність та легкість у використанні.</p>
+    <a class="btn" href="#features">Дізнатись більше</a>
+  </div>
+</header>
+
+
+<section id="about">
+  <div class="container">
+    <h2>Про сайт</h2>
+    <p>Цей шаблон показує, як швидко зібрати сучасну сторінку з розділеними файлами HTML та CSS.</p>
+  </div>
+</section>
+
+
+<section id="features">
+  <div class="container">
+    <h2>Можливості</h2>
+    <p>Три прості блоки, які можна легко редагувати.</p>
+    <div class="grid-3" style="margin-top: 20px;">
+      <article class="card">
+        <h3>Адаптивність</h3>
+        <p>Гарно виглядає на телефоні, планшеті та комп'ютері.</p>
+      </article>
+      <article class="card">
+        <h3>Простота</h3>
+        <p>Чистий, зрозумілий код без зайвого.</p>
+      </article>
+      <article class="card">
+        <h3>Стиль</h3>
+        <p>Лаконічний дизайн із приємними відступами та тінями.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="container">
+    <h2>Зв'язатися</h2>
+    <form onsubmit="event.preventDefault(); alert('Дякуємо! Ми зв’яжемось з вами.');">
+      <input type="text" name="name" placeholder="Ваше ім'я" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Повідомлення"></textarea>
+      <button class="btn" type="submit">Відправити</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© <span id="y"></span> SimpleSite</p>
+  </div>
+</footer>
+
+<script>
+
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
